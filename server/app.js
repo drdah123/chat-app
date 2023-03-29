@@ -1,9 +1,10 @@
 require('dotenv/config');
-const app = require('express')();
+const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
+const app = express();
 
 require('./socket-handler');
 
